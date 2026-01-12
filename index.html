@@ -23,9 +23,17 @@
         }
         h1 { margin: 0; font-size: 2em; }
         .subtitle { opacity: 0.9; margin-top: 10px; }
+        .warning {
+            background: #ef444433;
+            border: 1px solid #ef4444;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
             margin-bottom: 30px;
         }
@@ -88,6 +96,11 @@
         <div class="subtitle">Paper Trading Results - Live Dashboard</div>
     </div>
 
+    <div class="warning">
+        ⚠️ Cloudflare is blocking all order executions from VPS IP. Bot detecting trades but cannot execute them.
+        <br>Detected: 49 trades | Executed: 0 | Failed: 30
+    </div>
+
     <div class="stats-grid">
         <div class="stat-card">
             <div class="stat-label">Starting Capital</div>
@@ -106,8 +119,16 @@
             <div class="stat-value neutral">+0.0%</div>
         </div>
         <div class="stat-card">
-            <div class="stat-label">Trades Executed</div>
-            <div class="stat-value">0</div>
+            <div class="stat-label">Trades Detected</div>
+            <div class="stat-value">49</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Executed</div>
+            <div class="stat-value positive">0</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Failed</div>
+            <div class="stat-value negative">30</div>
         </div>
         <div class="stat-card">
             <div class="stat-label">Win Rate</div>
@@ -116,7 +137,7 @@
     </div>
 
     <div class="trades-table">
-        <h2>Recent Trades</h2>
+        <h2>Recent Trades (Last 30)</h2>
         <table>
             <thead>
                 <tr>
@@ -130,11 +151,243 @@
             <tbody>
                 
         <tr>
+            <td>2026-01-12 03:20:12</td>
+            <td>Solana Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:20:17</td>
+            <td>Bitcoin Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:20:17</td>
+            <td>Ethereum Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:20:18</td>
+            <td>Solana Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:20:48</td>
+            <td>Ethereum Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:20:48</td>
+            <td>XRP Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:20:48</td>
+            <td>Ethereum Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:20:48</td>
+            <td>Bitcoin Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:21:50</td>
+            <td>Solana Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:22:20</td>
+            <td>Solana Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:22:26</td>
+            <td>Solana Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:22:52</td>
+            <td>Solana Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:22:52</td>
+            <td>Ethereum Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:22:52</td>
+            <td>Solana Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:22:52</td>
+            <td>Solana Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:23:23</td>
+            <td>XRP Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:23:23</td>
+            <td>XRP Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:23:28</td>
+            <td>XRP Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
             <td>2026-01-12 03:23:54</td>
             <td>XRP Up or Down - January 11, 10PM ET</td>
-            <td><span class="badge badge-up">BUY</span></td>
+            <td><span class="badge badge-up">BUY Down</span></td>
             <td>$1.00</td>
-            <td>Failed</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:23:54</td>
+            <td>XRP Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Down</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:23:54</td>
+            <td>XRP Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:25:27</td>
+            <td>Solana Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:25:27</td>
+            <td>Ethereum Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:25:27</td>
+            <td>Solana Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:26:29</td>
+            <td>XRP Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Down</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:27:00</td>
+            <td>Solana Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:27:00</td>
+            <td>Solana Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:27:00</td>
+            <td>Solana Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:27:01</td>
+            <td>Solana Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-12 03:27:32</td>
+            <td>Solana Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">BUY Up</span></td>
+            <td>$1.00</td>
+            <td>Failed (Cloudflare)</td>
         </tr>
         
             </tbody>
@@ -142,7 +395,7 @@
     </div>
 
     <div class="update-time">
-        Auto-refreshes every 30 seconds • Last updated: 2026-01-12 03:25:01
+        Auto-refreshes every 30 seconds • Last updated: 2026-01-12 03:27:33
     </div>
 </body>
 </html>
