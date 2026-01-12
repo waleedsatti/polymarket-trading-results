@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polymarket Copy Trading - Paper Results</title>
+    <title>Polymarket Copy Trading - REAL Data Only</title>
     <meta http-equiv="refresh" content="30">
     <style>
         body {
@@ -24,9 +24,9 @@
         h1 { margin: 0; font-size: 2em; }
         .subtitle { opacity: 0.9; margin-top: 10px; }
         .warning {
-            background: #ef444433;
-            border: 1px solid #ef4444;
-            padding: 15px;
+            background: #3b82f6;
+            border: 1px solid #60a5fa;
+            padding: 20px;
             border-radius: 8px;
             margin-bottom: 20px;
             text-align: center;
@@ -52,8 +52,6 @@
             font-size: 2em;
             font-weight: bold;
         }
-        .positive { color: #10b981; }
-        .negative { color: #ef4444; }
         .neutral { color: #6b7280; }
         .trades-table {
             background: #1a1f3a;
@@ -93,13 +91,13 @@
 <body>
     <div class="header">
         <h1>📊 Polymarket Copy Trading Bot</h1>
-        <div class="subtitle">Paper Trading - SIMULATED Results (65% Win Rate)</div>
+        <div class="subtitle">REAL Data Only - No Simulation</div>
     </div>
 
     <div class="warning">
-        ℹ️ These are SIMULATED results based on detected trades with assumed 65% win rate.
-        <br>Detected: 4012 trades | Simulated Wins: 0 | Simulated Losses: 0
-        <br>⚠️ Cloudflare blocking prevents actual execution - these show what profit WOULD be if trades executed.
+        ℹ️ Showing REAL detected trades only. No profit simulation.
+        <br>Profit will show once markets resolve and we know actual winners.
+        <br><strong>Total Trades Detected: 4069</strong>
     </div>
 
     <div class="stats-grid">
@@ -108,287 +106,535 @@
             <div class="stat-value">$100.00</div>
         </div>
         <div class="stat-card">
-            <div class="stat-label">Current Capital</div>
-            <div class="stat-value positive">$5002.15</div>
+            <div class="stat-label">Total Trades Detected</div>
+            <div class="stat-value">4069</div>
         </div>
         <div class="stat-card">
-            <div class="stat-label">Total Profit/Loss</div>
-            <div class="stat-value positive">$+4902.15</div>
+            <div class="stat-label">UP Bets</div>
+            <div class="stat-value">2172</div>
         </div>
         <div class="stat-card">
-            <div class="stat-label">ROI</div>
-            <div class="stat-value positive">+4902.1%</div>
+            <div class="stat-label">DOWN Bets</div>
+            <div class="stat-value">1897</div>
         </div>
         <div class="stat-card">
-            <div class="stat-label">Trades Detected</div>
-            <div class="stat-value">4012</div>
+            <div class="stat-label">Markets Resolved</div>
+            <div class="stat-value neutral">0</div>
         </div>
         <div class="stat-card">
-            <div class="stat-label">Executed</div>
-            <div class="stat-value positive">0</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-label">Failed</div>
-            <div class="stat-value negative">0</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-label">Win Rate</div>
-            <div class="stat-value neutral">64.5%</div>
+            <div class="stat-label">Current Profit</div>
+            <div class="stat-value neutral">TBD</div>
         </div>
     </div>
 
     <div class="trades-table">
-        <h2>Recent Trades (Last 30)</h2>
+        <h2>Markets Summary (Waiting for Resolution)</h2>
         <table>
             <thead>
                 <tr>
-                    <th>Time</th>
                     <th>Market</th>
-                    <th>Side</th>
-                    <th>Bet</th>
-                    <th>Result</th>
+                    <th>Your UP Bets</th>
+                    <th>Your DOWN Bets</th>
+                    <th>Actual Winner</th>
+                    <th>Profit</th>
                 </tr>
             </thead>
             <tbody>
                 
         <tr>
-            <td>2026-01-12 08:19:11</td>
+            <td>Bitcoin Up or Down - January 11, 10:15PM-10:30PM ET</td>
+            <td><span class="badge badge-up">19 UP</span></td>
+            <td><span class="badge badge-down">0 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 11, 10:30PM-10:45PM ET</td>
+            <td><span class="badge badge-up">31 UP</span></td>
+            <td><span class="badge badge-down">53 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 11, 10:45PM-11:00PM ET</td>
+            <td><span class="badge badge-up">24 UP</span></td>
+            <td><span class="badge badge-down">48 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">43 UP</span></td>
+            <td><span class="badge badge-down">80 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 11, 11:00PM-11:15PM ET</td>
+            <td><span class="badge badge-up">37 UP</span></td>
+            <td><span class="badge badge-down">65 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 11, 11:15PM-11:30PM ET</td>
+            <td><span class="badge badge-up">40 UP</span></td>
+            <td><span class="badge badge-down">9 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 11, 11:30PM-11:45PM ET</td>
+            <td><span class="badge badge-up">15 UP</span></td>
+            <td><span class="badge badge-down">1 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 11, 11PM ET</td>
+            <td><span class="badge badge-up">42 UP</span></td>
+            <td><span class="badge badge-down">22 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 12, 12:15AM-12:30AM ET</td>
+            <td><span class="badge badge-up">34 UP</span></td>
+            <td><span class="badge badge-down">31 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 12, 12:30AM-12:45AM ET</td>
+            <td><span class="badge badge-up">59 UP</span></td>
+            <td><span class="badge badge-down">37 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 12, 12:45AM-1:00AM ET</td>
+            <td><span class="badge badge-up">37 UP</span></td>
+            <td><span class="badge badge-down">44 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 12, 12AM ET</td>
+            <td><span class="badge badge-up">105 UP</span></td>
+            <td><span class="badge badge-down">34 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 12, 1:00AM-1:15AM ET</td>
+            <td><span class="badge badge-up">82 UP</span></td>
+            <td><span class="badge badge-down">118 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 12, 1:15AM-1:30AM ET</td>
+            <td><span class="badge badge-up">36 UP</span></td>
+            <td><span class="badge badge-down">17 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 12, 1:30AM-1:45AM ET</td>
+            <td><span class="badge badge-up">56 UP</span></td>
+            <td><span class="badge badge-down">40 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 12, 1:45AM-2:00AM ET</td>
+            <td><span class="badge badge-up">63 UP</span></td>
+            <td><span class="badge badge-down">59 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 12, 1AM ET</td>
+            <td><span class="badge badge-up">56 UP</span></td>
+            <td><span class="badge badge-down">32 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 12, 2:00AM-2:15AM ET</td>
+            <td><span class="badge badge-up">53 UP</span></td>
+            <td><span class="badge badge-down">77 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 12, 2:15AM-2:30AM ET</td>
+            <td><span class="badge badge-up">76 UP</span></td>
+            <td><span class="badge badge-down">94 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 12, 2:30AM-2:45AM ET</td>
+            <td><span class="badge badge-up">33 UP</span></td>
+            <td><span class="badge badge-down">25 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 12, 2:45AM-3:00AM ET</td>
+            <td><span class="badge badge-up">81 UP</span></td>
+            <td><span class="badge badge-down">48 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 12, 2AM ET</td>
+            <td><span class="badge badge-up">33 UP</span></td>
+            <td><span class="badge badge-down">38 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 12, 3:00AM-3:15AM ET</td>
+            <td><span class="badge badge-up">58 UP</span></td>
+            <td><span class="badge badge-down">88 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Bitcoin Up or Down - January 12, 3:15AM-3:30AM ET</td>
+            <td><span class="badge badge-up">78 UP</span></td>
+            <td><span class="badge badge-down">45 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
             <td>Bitcoin Up or Down - January 12, 3AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Lost ❌</td>
+            <td><span class="badge badge-up">13 UP</span></td>
+            <td><span class="badge badge-down">23 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
         </tr>
         
         <tr>
-            <td>2026-01-12 08:19:11</td>
+            <td>Ethereum Up or Down - January 11, 10:15PM-10:30PM ET</td>
+            <td><span class="badge badge-up">2 UP</span></td>
+            <td><span class="badge badge-down">0 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 11, 10:30PM-10:45PM ET</td>
+            <td><span class="badge badge-up">21 UP</span></td>
+            <td><span class="badge badge-down">0 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 11, 10:45PM-11:00PM ET</td>
+            <td><span class="badge badge-up">12 UP</span></td>
+            <td><span class="badge badge-down">12 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">34 UP</span></td>
+            <td><span class="badge badge-down">63 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 11, 11:00PM-11:15PM ET</td>
+            <td><span class="badge badge-up">9 UP</span></td>
+            <td><span class="badge badge-down">28 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 11, 11:15PM-11:30PM ET</td>
+            <td><span class="badge badge-up">28 UP</span></td>
+            <td><span class="badge badge-down">0 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 11, 11:30PM-11:45PM ET</td>
+            <td><span class="badge badge-up">2 UP</span></td>
+            <td><span class="badge badge-down">1 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 11, 11PM ET</td>
+            <td><span class="badge badge-up">11 UP</span></td>
+            <td><span class="badge badge-down">33 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 12, 12:15AM-12:30AM ET</td>
+            <td><span class="badge badge-up">7 UP</span></td>
+            <td><span class="badge badge-down">8 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 12, 12:30AM-12:45AM ET</td>
+            <td><span class="badge badge-up">35 UP</span></td>
+            <td><span class="badge badge-down">2 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 12, 12:45AM-1:00AM ET</td>
+            <td><span class="badge badge-up">18 UP</span></td>
+            <td><span class="badge badge-down">0 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 12, 12AM ET</td>
+            <td><span class="badge badge-up">111 UP</span></td>
+            <td><span class="badge badge-down">54 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 12, 1:00AM-1:15AM ET</td>
+            <td><span class="badge badge-up">0 UP</span></td>
+            <td><span class="badge badge-down">47 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 12, 1:15AM-1:30AM ET</td>
+            <td><span class="badge badge-up">13 UP</span></td>
+            <td><span class="badge badge-down">0 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 12, 1:30AM-1:45AM ET</td>
+            <td><span class="badge badge-up">32 UP</span></td>
+            <td><span class="badge badge-down">26 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 12, 1:45AM-2:00AM ET</td>
+            <td><span class="badge badge-up">0 UP</span></td>
+            <td><span class="badge badge-down">3 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 12, 1AM ET</td>
+            <td><span class="badge badge-up">16 UP</span></td>
+            <td><span class="badge badge-down">18 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 12, 2:00AM-2:15AM ET</td>
+            <td><span class="badge badge-up">1 UP</span></td>
+            <td><span class="badge badge-down">1 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 12, 2:15AM-2:30AM ET</td>
+            <td><span class="badge badge-up">26 UP</span></td>
+            <td><span class="badge badge-down">12 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 12, 2:30AM-2:45AM ET</td>
+            <td><span class="badge badge-up">1 UP</span></td>
+            <td><span class="badge badge-down">6 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 12, 2:45AM-3:00AM ET</td>
+            <td><span class="badge badge-up">33 UP</span></td>
+            <td><span class="badge badge-down">15 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 12, 2AM ET</td>
+            <td><span class="badge badge-up">10 UP</span></td>
+            <td><span class="badge badge-down">21 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 12, 3:00AM-3:15AM ET</td>
+            <td><span class="badge badge-up">8 UP</span></td>
+            <td><span class="badge badge-down">6 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 12, 3:15AM-3:30AM ET</td>
+            <td><span class="badge badge-up">6 UP</span></td>
+            <td><span class="badge badge-down">3 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Ethereum Up or Down - January 12, 3AM ET</td>
+            <td><span class="badge badge-up">13 UP</span></td>
+            <td><span class="badge badge-down">0 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Solana Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">42 UP</span></td>
+            <td><span class="badge badge-down">37 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Solana Up or Down - January 11, 11PM ET</td>
+            <td><span class="badge badge-up">56 UP</span></td>
+            <td><span class="badge badge-down">25 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Solana Up or Down - January 12, 12AM ET</td>
+            <td><span class="badge badge-up">133 UP</span></td>
+            <td><span class="badge badge-down">125 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Solana Up or Down - January 12, 1AM ET</td>
+            <td><span class="badge badge-up">46 UP</span></td>
+            <td><span class="badge badge-down">22 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Solana Up or Down - January 12, 2AM ET</td>
+            <td><span class="badge badge-up">84 UP</span></td>
+            <td><span class="badge badge-down">98 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>Solana Up or Down - January 12, 3AM ET</td>
+            <td><span class="badge badge-up">29 UP</span></td>
+            <td><span class="badge badge-down">5 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>XRP Up or Down - January 11, 10PM ET</td>
+            <td><span class="badge badge-up">23 UP</span></td>
+            <td><span class="badge badge-down">16 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>XRP Up or Down - January 11, 11PM ET</td>
+            <td><span class="badge badge-up">6 UP</span></td>
+            <td><span class="badge badge-down">11 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>XRP Up or Down - January 12, 12AM ET</td>
+            <td><span class="badge badge-up">32 UP</span></td>
+            <td><span class="badge badge-down">14 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>XRP Up or Down - January 12, 1AM ET</td>
+            <td><span class="badge badge-up">40 UP</span></td>
+            <td><span class="badge badge-down">30 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
+            <td>XRP Up or Down - January 12, 2AM ET</td>
+            <td><span class="badge badge-up">21 UP</span></td>
+            <td><span class="badge badge-down">16 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
+        </tr>
+        
+        <tr>
             <td>XRP Up or Down - January 12, 3AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:11</td>
-            <td>Bitcoin Up or Down - January 12, 3:15AM-3:30AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:11</td>
-            <td>Solana Up or Down - January 12, 3AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:12</td>
-            <td>Bitcoin Up or Down - January 12, 3AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:12</td>
-            <td>XRP Up or Down - January 12, 3AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:12</td>
-            <td>XRP Up or Down - January 12, 3AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:12</td>
-            <td>Solana Up or Down - January 12, 3AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:12</td>
-            <td>XRP Up or Down - January 12, 3AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Lost ❌</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:12</td>
-            <td>Bitcoin Up or Down - January 12, 3AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:43</td>
-            <td>Bitcoin Up or Down - January 12, 3AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:43</td>
-            <td>Bitcoin Up or Down - January 12, 3AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:43</td>
-            <td>Bitcoin Up or Down - January 12, 3:15AM-3:30AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:43</td>
-            <td>Bitcoin Up or Down - January 12, 3:15AM-3:30AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:43</td>
-            <td>Solana Up or Down - January 12, 3AM ET</td>
-            <td><span class="badge badge-up">BUY Up</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:43</td>
-            <td>Solana Up or Down - January 12, 3AM ET</td>
-            <td><span class="badge badge-up">BUY Up</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:43</td>
-            <td>Solana Up or Down - January 12, 3AM ET</td>
-            <td><span class="badge badge-up">BUY Up</span></td>
-            <td>$1.00</td>
-            <td>Lost ❌</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:43</td>
-            <td>Bitcoin Up or Down - January 12, 3:15AM-3:30AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:43</td>
-            <td>Bitcoin Up or Down - January 12, 3:15AM-3:30AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:43</td>
-            <td>Solana Up or Down - January 12, 3AM ET</td>
-            <td><span class="badge badge-up">BUY Up</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:43</td>
-            <td>Bitcoin Up or Down - January 12, 3:15AM-3:30AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:43</td>
-            <td>Bitcoin Up or Down - January 12, 3:15AM-3:30AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:44</td>
-            <td>Bitcoin Up or Down - January 12, 3:15AM-3:30AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Lost ❌</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:44</td>
-            <td>Bitcoin Up or Down - January 12, 3:15AM-3:30AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Lost ❌</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:44</td>
-            <td>Bitcoin Up or Down - January 12, 3:15AM-3:30AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Lost ❌</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:44</td>
-            <td>Bitcoin Up or Down - January 12, 3:15AM-3:30AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:44</td>
-            <td>Bitcoin Up or Down - January 12, 3:15AM-3:30AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:44</td>
-            <td>Bitcoin Up or Down - January 12, 3:15AM-3:30AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:44</td>
-            <td>XRP Up or Down - January 12, 3AM ET</td>
-            <td><span class="badge badge-up">BUY Up</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
-        </tr>
-        
-        <tr>
-            <td>2026-01-12 08:19:44</td>
-            <td>Bitcoin Up or Down - January 12, 3:15AM-3:30AM ET</td>
-            <td><span class="badge badge-up">BUY Down</span></td>
-            <td>$1.00</td>
-            <td>Won ✅</td>
+            <td><span class="badge badge-up">7 UP</span></td>
+            <td><span class="badge badge-down">11 DOWN</span></td>
+            <td>❓ Unknown</td>
+            <td>⏳ Pending</td>
         </tr>
         
             </tbody>
@@ -396,7 +642,8 @@
     </div>
 
     <div class="update-time">
-        Auto-refreshes every 30 seconds • Last updated: 2026-01-12 08:20:01
+        Real data only (no simulation) • Last updated: 2026-01-12 08:22:01
+        <br>Profit will appear once markets resolve
     </div>
 </body>
 </html>
